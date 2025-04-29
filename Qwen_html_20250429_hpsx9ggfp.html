@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G20 Страны</title>
+  
+  <!-- Подключение шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Подключение иконок -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .countries-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .country-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      padding: 1.5rem;
+    }
+
+    .country-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    }
+
+    .country-flag {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .country-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    .country-info {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Страны G20</h1>
+
+  <div class="countries-container">
+    <!-- Россия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-ru"></div>
+      <div class="country-name">Россия</div>
+      <div class="country-info">Столица: Москва | Население: ~144 млн</div>
+    </div>
+
+    <!-- США -->
+    <div class="country-card">
+      <div class="country-flag fi fi-us"></div>
+      <div class="country-name">США</div>
+      <div class="country-info">Столица: Вашингтон | Население: ~331 млн</div>
+    </div>
+
+    <!-- Индия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-in"></div>
+      <div class="country-name">Индия</div>
+      <div class="country-info">Столица: Нью-Дели | Население: ~1.4 млрд</div>
+    </div>
+
+    <!-- Китай -->
+    <div class="country-card">
+      <div class="country-flag fi fi-cn"></div>
+      <div class="country-name">Китай</div>
+      <div class="country-info">Столица: Пекин | Население: ~1.4 млрд</div>
+    </div>
+
+    <!-- Япония -->
+    <div class="country-card">
+      <div class="country-flag fi fi-jp"></div>
+      <div class="country-name">Япония</div>
+      <div class="country-info">Столица: Токио | Население: ~125 млн</div>
+    </div>
+
+    <!-- Германия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-de"></div>
+      <div class="country-name">Германия</div>
+      <div class="country-info">Столица: Берлин | Население: ~83 млн</div>
+    </div>
+
+    <!-- Франция -->
+    <div class="country-card">
+      <div class="country-flag fi fi-fr"></div>
+      <div class="country-name">Франция</div>
+      <div class="country-info">Столица: Париж | Население: ~67 млн</div>
+    </div>
+
+    <!-- Великобритания -->
+    <div class="country-card">
+      <div class="country-flag fi fi-gb"></div>
+      <div class="country-name">Великобритания</div>
+      <div class="country-info">Столица: Лондон | Население: ~68 млн</div>
+    </div>
+
+    <!-- Италия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-it"></div>
+      <div class="country-name">Италия</div>
+      <div class="country-info">Столица: Рим | Население: ~60 млн</div>
+    </div>
+
+    <!-- Канада -->
+    <div class="country-card">
+      <div class="country-flag fi fi-ca"></div>
+      <div class="country-name">Канада</div>
+      <div class="country-info">Столица: Оттава | Население: ~38 млн</div>
+    </div>
+
+    <!-- Бразилия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-br"></div>
+      <div class="country-name">Бразилия</div>
+      <div class="country-info">Столица: Бразилиа | Население: ~213 млн</div>
+    </div>
+
+    <!-- Австралия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-au"></div>
+      <div class="country-name">Австралия</div>
+      <div class="country-info">Столица: Канберра | Население: ~26 млн</div>
+    </div>
+
+    <!-- Южная Корея -->
+    <div class="country-card">
+      <div class="country-flag fi fi-kr"></div>
+      <div class="country-name">Южная Корея</div>
+      <div class="country-info">Столица: Сеул | Население: ~51 млн</div>
+    </div>
+
+    <!-- Мексика -->
+    <div class="country-card">
+      <div class="country-flag fi fi-mx"></div>
+      <div class="country-name">Мексика</div>
+      <div class="country-info">Столица: Мехико | Население: ~130 млн</div>
+    </div>
+
+    <!-- Турция -->
+    <div class="country-card">
+      <div class="country-flag fi fi-tr"></div>
+      <div class="country-name">Турция</div>
+      <div class="country-info">Столица: Анкара | Население: ~85 млн</div>
+    </div>
+
+    <!-- ЮАР -->
+    <div class="country-card">
+      <div class="country-flag fi fi-za"></div>
+      <div class="country-name">ЮАР</div>
+      <div class="country-info">Столица: Претория, Кейптаун, Блумфонтейн | Население: ~60 млн</div>
+    </div>
+
+    <!-- Арджентина -->
+    <div class="country-card">
+      <div class="country-flag fi fi-ar"></div>
+      <div class="country-name">Аргентина</div>
+      <div class="country-info">Столица: Буэнос-Айрес | Население: ~45 млн</div>
+    </div>
+
+    <!-- Индонезия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-id"></div>
+      <div class="country-name">Индонезия</div>
+      <div class="country-info">Столица: Джакарта | Население: ~276 млн</div>
+    </div>
+
+    <!-- Саудовская Аравия -->
+    <div class="country-card">
+      <div class="country-flag fi fi-sa"></div>
+      <div class="country-name">Саудовская Аравия</div>
+      <div class="country-info">Столица: Эр-Рияд | Население: ~36 млн</div>
+    </div>
+  </div>
+</body>
+</html>
